@@ -1,0 +1,26 @@
+shrimp
+onigiri
+onigiri
+onigiri
+shrimp
+bluefin tuna
+bluefin tuna
+bluefin tuna
+bluefin tuna
+bluefin tuna
+
+============ every sushi detected ===========
+
+bluefin tuna: 5
+minced tuna: 0
+onigiri: 3
+rice: 0
+salmon: 0
+shrimp: 2
+tamago: 0
+tobiko: 0
+
+
+============ popular sushi  ===========
+
+bluefin tuna: 0minced tuna: 0onigiri: 3rice: 0salmon: 0shrimp: 2tamago: 0tobiko: 0
