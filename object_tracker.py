@@ -298,11 +298,7 @@ def output_result(queue, queue2 = None, sushi_list = None):
         f.write("\n\n" + "============ popular sushi  ===========" + "\n\n")
         
         [print(str(i) + ": " + str(queue2.count(i))) for i in obj_names]
-<<<<<<< HEAD
         [f.write(str(i) + ": " + str(queue2.count(i)) + "\n") for i in obj_names]
-=======
-        [f.write(str(i) + ": " + str(queue2.count(i))) for i in obj_names]
->>>>>>> b1b09b1037e15ff615c47c63f2be7ef52e0914c3
 
         f.close()
 # =====================================================================================================
