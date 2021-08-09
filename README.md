@@ -46,9 +46,6 @@ Copy and paste yolov4.weights from your downloads folder into the 'data' folder 
 
 If you want to use yolov4-tiny.weights, a smaller model that is faster at running detections but less accurate, download file here: https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v4_pre/yolov4-tiny.weights
 
-If you want to use your own model, use your own yolov4 program or train with AlexeyAB's darknet here:
-https://github.com/AlexeyAB/darknet
-
 ## Running the Tracker with YOLOv4
 To implement the object tracking using YOLOv4, first we convert the .weights into the corresponding TensorFlow model which will be saved to a checkpoints folder. Then all we need to do is run the object_tracker.py script to run our object tracker with YOLOv4, DeepSort and TensorFlow.
 ```bash
@@ -74,6 +71,10 @@ python save_model.py --weights ./data/yolov4-tiny.weights --output ./checkpoints
 # Run yolov4-tiny object tracker
 python object_tracker.py --weights ./checkpoints/yolov4-tiny-416 --model yolov4 --video ./data/video/test.mp4 --output ./outputs/tiny.avi --tiny
 ```
+## Running the Tracker with custom Yolov4
+If you want to use your own model, use your own yolov4 program to train a model first then run save_model.py to convert model.
+Train with AlexeyAB's darknet here:
+https://github.com/AlexeyAB/darknet
 
 ## Resulting Video
 As mentioned above, the resulting video will save to wherever you set the ``--output`` command line flag path to. I always set it to save to the 'outputs' folder. You can also change the type of video saved by adjusting the ``--output_format`` flag, by default it is set to AVI codec which is XVID.
